@@ -6,7 +6,7 @@ function App() {
     <div className="p-8">
       hello world
       <Button>Click me</Button>
-      <Input />
+      <Input />   
     </div>
   );
 }

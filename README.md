@@ -248,6 +248,17 @@ export default defineConfig({
 
 ---
 
+### use this first in dev dependence 
+```
+npm install --save-dev eslint@^8.57.0 eslint-config-prettier@^8.10.0 eslint-plugin-import@^2.29.1 eslint-plugin-prettier@^5.1.3 eslint-plugin-react@^7.34.4 eslint-plugin-react-hooks@^4.6.2 eslint-plugin-react-refresh@^0.4.3 eslint-plugin-storybook@^0.6.12 @typescript-eslint/eslint-plugin@^7.16.0 @typescript-eslint/parser@^7.16.0
+```
+
+### use this secound in dependence 
+```
+npm install eslint@^8.57.0 eslint-config-prettier@^8.10.0 eslint-plugin-import@^2.29.1 eslint-plugin-prettier@^5.1.3 eslint-plugin-react@^7.34.4 eslint-plugin-react-hooks@^4.6.2 eslint-plugin-react-refresh@^0.4.3 eslint-plugin-storybook@^0.6.12 @typescript-eslint/eslint-plugin@^7.16.0 @typescript-eslint/parser@^7.16.0 @eslint-community/eslint-utils@^4.4.0 @eslint-community/regexpp@^4.11.0 @eslint/eslintrc@^3.1.0
+```
+--- 
+
 ## ESLint Configuration (`.eslintrc.json`)
 
 This project uses ESLint to maintain code quality and enforce consistent coding standards. Below is the ESLint configuration with detailed explanations for each setting.
@@ -462,4 +473,45 @@ This project uses a series of NPM scripts to streamline development, building, a
   "useTabs": false, // Use spaces instead of tabs for indentation.
   "plugins": ["prettier-plugin-tailwindcss"] // Use the Tailwind CSS plugin to sort class names in Tailwind CSS files.
 }
+```
+
+## Summary 
+
+```
+├── src
+│   ├── app
+│   │   ├── api
+|   |   |    └── index.tsx
+│   │   ├── constants
+│   │   │       ├── endpoints.ts
+│   │   │       ├── enums.ts
+│   │   │       ├── keys.ts
+│   │   │       └── routes.ts
+│   │   └── routes
+│   │         └── index.tsx
+│   ├── assets
+│   │   ├── icon
+│   │   └── img
+│   ├── modules
+│   │   ├── auth
+│   │   │   └── index.ts
+│   │   ├── home
+│   │   │   └── index.ts
+│   ├── shadecn
+│   │   ├── components
+│   │   │   └── ui
+│   │   └── lib
+│   └── shared
+│       ├── layouts
+│       |    ├── AppLayouts.tsx
+│       |    ├── ErrorBoundary.tsx
+│       |    └── ErrorComponent.tsx
+│       └── ui
+│           ├── Button
+│           └── index.ts
+│   
+├── index.html
+├── vite.config.ts
+├── package.json
+└── README.md
 ```
